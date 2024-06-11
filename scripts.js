@@ -126,17 +126,17 @@ submitBtn.addEventListener("click", () => {
   cardText.appendChild(contForContent);
   contForContent.appendChild(bookName);
   contForContent.appendChild(authorName);
-  contForContent.appendChild(numberOfPages);
+  cardText.appendChild(numberOfPages);
   cardText.appendChild(readBtn);
   deleteBtn.addEventListener("click", () => {
     bookCard.remove();
   });
   readBtn.addEventListener("click", () => {
-    if (readBtn.innerText === "Read") {
-      readBtn.innerText === "Not Read";
+    if (readBtn.innerText == "Read") {
+      readBtn.innerText = "Not Read";
       readBtn.style.backgroundColor = "#669999";
     } else {
-      readBtn.innerText === "Read";
+      readBtn.innerText = "Read";
       readBtn.style.backgroundColor = "#339966";
     }
   });
